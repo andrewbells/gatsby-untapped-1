@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -17,8 +18,8 @@ const BlogIndex = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="Blog"
-        keywords={[`devlog`, `blog`, `gatsby`, `javascript`, `react`]}
+        title="Welcome to the Untapped Grounds"
+        keywords={[`mtg`, `magic the gathering`, `community`, `tech`, `helsinki`]}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
@@ -28,6 +29,17 @@ const BlogIndex = ({ data }, location) => {
           </h2>
         </header>
       )}
+
+      <div className="kg-card-index-img-untapped">
+        <article className="post-card post-card-large post with-image">
+         <Link to={`/about`} className="post-card-link">
+             <div className="post-card-content">
+              <h2 className="post-card-title">Join us!</h2>
+             </div>
+           </Link>
+       </article>
+      </div>
+
       <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++
@@ -41,6 +53,7 @@ const BlogIndex = ({ data }, location) => {
           )
         })}
       </div>
+      
     </Layout>
   )
 }
