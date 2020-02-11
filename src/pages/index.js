@@ -30,7 +30,7 @@ const BlogIndex = ({ data }, location) => {
         </header>
       )}
 
-      <div className="kg-card-index-img-untapped">
+      <div className="">
         <article className="post-card post-card-large post with-image">
          <Link to={`/about`} className="post-card-link">
              <div className="post-card-content">
@@ -53,7 +53,7 @@ const BlogIndex = ({ data }, location) => {
           )
         })}
       </div>
-      
+
     </Layout>
   )
 }
