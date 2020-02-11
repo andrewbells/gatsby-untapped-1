@@ -1,6 +1,7 @@
 ---
 title: Play
 date: "2020-02-11"
+tags: [mtg,helsinki,tech]
 thumbnail: ./deck_building.JPG
 description: From players to players. Why joining the Untapped?
 ---
