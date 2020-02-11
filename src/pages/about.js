@@ -27,7 +27,7 @@ const AboutPage = ({ data }, location) => {
             The purpose of this community is to bring Helsinki-based MTG players together, enable them play in comfort, at a reasonable time and a convenient place.
           </p>
           <p>
-            Next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks and, of course, the cards would be sponsored by the host. Clearly a win win situation!
+            Next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks and, of course, the cards would be sponsored by the host. Clearly a win-win situation!
           </p>
           <p>
             Let’s make this happen! 
