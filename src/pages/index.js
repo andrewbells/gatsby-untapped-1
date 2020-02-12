@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -33,6 +34,10 @@ const BlogIndex = ({ data }, location) => {
       <div className="">
         <article className="post-card post-card-large post with-image">
          <Link to={`/about`} className="post-card-link">
+            <Img
+              fluid={data.largePic.childImageSharp.fluid}
+              className="kg-image untapped-join-image"
+            />
              <div className="post-card-content">
               <h2 className="post-card-title">Join us!</h2>
              </div>
@@ -66,6 +71,17 @@ const indexQuery = graphql`
         description
       }
     }
+
+    largePic: file(
+      relativePath: { eq: "mtg_wallpaper.jpg" }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {

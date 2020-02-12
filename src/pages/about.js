@@ -88,16 +88,13 @@ const AboutPage = ({ data }, location) => {
               </div>
               {/* Break */}
               <div className="col-12">
-                <ul className="actions">
+                <ul className="actions actions-even-padding fit">
                   <li>
                     <input
                       type="submit"
-                      defaultValue="Send Message"
+                      defaultValue="Sign up"
                       className="primary"
                     />
-                  </li>
-                  <li>
-                    <input type="reset" defaultValue="Reset" />
                   </li>
                 </ul>
               </div>
