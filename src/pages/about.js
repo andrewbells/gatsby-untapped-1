@@ -21,7 +21,7 @@ const AboutPage = ({ data }, location) => {
           </h2>
 
           <p>
-            There are many MTG fans who work at different tech companies in Helsinki and are interested to play draft, sealed and constructed games, but there is never quite enough players for a proper self-organized event.
+            There are many MTG fans working at different tech companies in Helsinki interested to play draft, sealed and constructed games, but there is never quite enough players for a proper self-organized event.
           </p>
           <p>
             The purpose of this community is to bring Helsinki-based MTG players together, enable them play in comfort, at a reasonable time and a convenient place.
@@ -30,7 +30,7 @@ const AboutPage = ({ data }, location) => {
             Next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks and, of course, the cards would be sponsored by the host. Clearly a win-win situation!
           </p>
           <p>
-            Let’s make this happen! 
+            Let’s make this happen - join the <strong>Untapped Slack</strong>:
           </p>
           <h3 id="forms">Request an invite</h3>
             <form method="post" action="#" data-netlify="true">
@@ -38,10 +38,17 @@ const AboutPage = ({ data }, location) => {
               <div className="col-6 col-12-xsmall">
                 <input
                   type="text"
-                  name="demo-name"
-                  id="demo-name"
-                  
-                  placeholder="Full Name"
+                  name="demo-firstname"
+                  id="demo-firstname"
+                  placeholder="First Name"
+                />
+              </div>
+              <div className="col-6 col-12-xsmall">
+                <input
+                  type="text"
+                  name="demo-lastname"
+                  id="demo-lastname"
+                  placeholder="Last Name"
                 />
               </div>
               <div className="col-6 col-12-xsmall">
@@ -49,7 +56,6 @@ const AboutPage = ({ data }, location) => {
                   type="email"
                   name="demo-email"
                   id="demo-email"
-                  
                   placeholder="Email"
                 />
               </div>
@@ -62,16 +68,24 @@ const AboutPage = ({ data }, location) => {
                   placeholder="LinkedIn / GitHub / Twitter [link]"
                 />
               </div>
+              <div className="col-12">
+                <textarea
+                  name="demo-message"
+                  id="demo-message"
+                  placeholder="Say hello (optional)"
+                  rows={6}
+                  defaultValue={""}
+                />
+              </div>
               <div className="col-6 col-12-small">
                 <input
                   type="checkbox"
-                  id="demo-human"
-                  name="demo-human"
-                  defaultNotChecked
+                  id="demo-host"
+                  name="demo-host"
+                  
                 />
-                <label htmlFor="demo-human">I am a human</label>
+                <label htmlFor="demo-host">I'd like to organize an event</label>
               </div>
-
               {/* Break */}
               <div className="col-12">
                 <ul className="actions">
