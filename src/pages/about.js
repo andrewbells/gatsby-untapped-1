@@ -36,35 +36,44 @@ const AboutPage = ({ data }, location) => {
             Let’s make this happen - join the <strong>Untapped Slack</strong>:
           </p>
           <h3 id="forms">Request an invite</h3>
-            <form name="sign-up" method="post" action="/success" netlify-honeypot="bot-field" data-netlify="true">
+            <form 
+              name="sign-up" 
+              method="post" 
+              action="/success" 
+              netlify-honeypot="bot-field" 
+              data-netlify="true"
+            >
+
             <div className="hidden">
               <label>Don’t fill this out if you're human: 
                 <input name="bot-field" />
               </label>
             </div>
 
+            <input type="hidden" name="sign-up" value="sign-up" />
+
             <div className="row gtr-uniform">
               <div className="col-6 col-12-xsmall">
                 <input
                   type="text"
-                  name="demo-firstname"
-                  id="demo-firstname"
+                  name="firstname"
+                  id="firstname"
                   placeholder="First Name"
                 />
               </div>
               <div className="col-6 col-12-xsmall">
                 <input
                   type="text"
-                  name="demo-lastname"
-                  id="demo-lastname"
+                  name="lastname"
+                  id="lastname"
                   placeholder="Last Name"
                 />
               </div>
               <div className="col-6 col-12-xsmall">
                 <input
                   type="email"
-                  name="demo-email"
-                  id="demo-email"
+                  name="email"
+                  id="email"
                   placeholder="Email"
 
                 />
@@ -73,15 +82,15 @@ const AboutPage = ({ data }, location) => {
               <div className="col-6 col-12-xsmall">
                 <input
                   type="text"
-                  name="demo-link"
-                  id="demo-link"
+                  name="link"
+                  id="link"
                   placeholder="LinkedIn / GitHub / Twitter [link]"
                 />
               </div>
               <div className="col-12">
                 <textarea
-                  name="demo-message"
-                  id="demo-message"
+                  name="message"
+                  id="message"
                   placeholder="Say hello (optional)"
                   rows={6}
                   defaultValue={""}
@@ -90,8 +99,8 @@ const AboutPage = ({ data }, location) => {
               <div className="col-6 col-12-small">
                 <input
                   type="checkbox"
-                  id="demo-host"
-                  name="demo-host"
+                  id="host"
+                  name="host"
                   
                 />
                 <label htmlFor="demo-host">I'd like to organize an event</label>
