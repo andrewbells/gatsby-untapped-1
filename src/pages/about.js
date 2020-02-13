@@ -50,7 +50,7 @@ const AboutPage = ({ data }, location) => {
               </label>
             </div>
 
-            <input type="hidden" name="sign-up" value="sign-up" />
+            <input type="hidden" name="form-name" value="sign-up" />
 
             <div className="row gtr-uniform">
               <div className="col-6 col-12-xsmall">
@@ -103,7 +103,7 @@ const AboutPage = ({ data }, location) => {
                   name="host"
                   
                 />
-                <label htmlFor="demo-host">I'd like to organize an event</label>
+                <label htmlFor="host">I'd like to organize an event</label>
               </div>
 
               {/* Break */}
