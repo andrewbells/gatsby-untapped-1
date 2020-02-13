@@ -12,28 +12,37 @@ const AboutPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO title="About" keywords={[`mtg`, `magic the gathering`, `community`, `tech`, `helsinki`]} />
+      <SEO
+        title="About"
+        keywords={[`mtg`, `magic the gathering`, `community`, `tech`, `helsinki`]}
+      />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
-          <h2 id="clean-minimal-and-deeply-customisable-london-is-a-theme-made-for-people-who-appreciate-simple-lines-">
+          <h2 id="about-id">
             Bringing together MTG fans working in tech
           </h2>
 
           <p>
-            There are many MTG fans working at different tech companies in Helsinki interested to play draft, sealed and constructed games, but there is never quite enough players for a proper self-organized event.
+            There are many MTG fans working at different tech companies in Helsinki, interested to play draft, sealed and constructed games, but there is never quite enough players for a proper self-organized event.
           </p>
           <p>
-            The purpose of this community is to bring Helsinki-based MTG players together, enable them play in comfort, at a reasonable time and a convenient place.
+            <strong>The purpose</strong> of this community is to bring Helsinki-based MTG players together, enable them to play in comfort, at a reasonable time and a convenient place.
           </p>
           <p>
-            Next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks and, of course, the cards would be sponsored by the host. Clearly a win-win situation!
+            The next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks and, of course, the cards would be sponsored by the host. Clearly a win-win situation!  
           </p>
           <p>
             Let’s make this happen - join the <strong>Untapped Slack</strong>:
           </p>
           <h3 id="forms">Request an invite</h3>
-            <form method="post" action="#" data-netlify="true">
+            <form name="sign-up" method="post" action="/success" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
+            <div className="hidden">
+              <label>Don’t fill this out if you're human: 
+                <input name="bot-field" />
+              </label>
+            </div>
+
             <div className="row gtr-uniform">
               <div className="col-6 col-12-xsmall">
                 <input
@@ -57,6 +66,7 @@ const AboutPage = ({ data }, location) => {
                   name="demo-email"
                   id="demo-email"
                   placeholder="Email"
+
                 />
               </div>
               {/* Break */}
@@ -86,13 +96,16 @@ const AboutPage = ({ data }, location) => {
                 />
                 <label htmlFor="demo-host">I'd like to organize an event</label>
               </div>
+              <div className="col-6 col-12-small">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
               {/* Break */}
               <div className="col-12">
                 <ul className="actions actions-even-padding fit">
                   <li>
                     <input
                       type="submit"
-                      defaultValue="Sign up"
+                      value="Sign up"
                       className="primary"
                     />
                   </li>
