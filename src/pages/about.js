@@ -36,7 +36,7 @@ const AboutPage = ({ data }, location) => {
             Let’s make this happen - join the <strong>Untapped Slack</strong>:
           </p>
           <h3 id="forms">Request an invite</h3>
-            <form name="sign-up" method="post" action="/success" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true">
+            <form name="sign-up" method="post" action="/success" netlify-honeypot="bot-field" data-netlify="true">
             <div className="hidden">
               <label>Don’t fill this out if you're human: 
                 <input name="bot-field" />
@@ -96,9 +96,7 @@ const AboutPage = ({ data }, location) => {
                 />
                 <label htmlFor="demo-host">I'd like to organize an event</label>
               </div>
-              <div className="col-6 col-12-small">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
+
               {/* Break */}
               <div className="col-12">
                 <ul className="actions actions-even-padding fit">
