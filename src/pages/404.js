@@ -22,7 +22,7 @@ class NotFoundPage extends React.Component {
         <article className="post-content post-content-no-padding page-template no-image">
           <div className="post-content-body">
             <p className="centered-text">
-              You just hit a route that doesn&#39;t exist... pull back!
+              You just hit a route that doesn&#39;t exist... fall back!
             </p>
 
           <figure className="post-card post-card-large with-image kg-image-card kg-width-full">
