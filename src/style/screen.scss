@@ -800,6 +800,26 @@ body {
   text-align: center;
 }
 
+/* Andrew's text adjustments
+/* ---------------------------------------------------------- */
+
+.post-content-body p {
+  text-align: justify;
+}
+
+.post-content-body p.centered-text {
+  text-align: center;
+}
+
+.post-content-body p.top-margin {
+  margin: 7vw 0 1.5em 0;
+}
+
+.post-content-no-padding {
+  padding: 0;
+}
+
+
 /* Tag Pages
 /* ---------------------------------------------------------- */
 

@@ -19,13 +19,14 @@ const SuccessPage = ({ data }, location) => {
         keywords={[`mtg`, `magic the gathering`, `community`, `tech`, `helsinki`]}
       />
 
-      <article className="post-content page-template no-image">
-        <div className="post-content-body">
-          <h2 id="success-id">
-            Thank you, we'll be in touch soon!
-          </h2>
+      <header className="tag-page-head">
+          <h1 className="page-head-title">Thank you, we'll be in touch soon!</h1>
+      </header>
 
-          <article className="post-card post-card-large post with-image kg-card">
+      <article className="post-content post-content-no-padding page-template no-image">
+        <div className="post-content-body">
+
+          <article className="post-card post-card-large post with-image">
             <Link to={`/about`} className="post-card-link">
               <Img
                 fluid={data.medPic.childImageSharp.fluid}

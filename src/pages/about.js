@@ -23,7 +23,7 @@ const AboutPage = ({ data }, location) => {
             Bringing together MTG fans working in tech
           </h2>
 
-          <p>
+          <p className="top-margin">
             There are many MTG fans working at different tech companies in Helsinki, interested to play draft, sealed and constructed games, but there is never quite enough players for a proper self-organized event.
           </p>
           <p>
