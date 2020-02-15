@@ -71,6 +71,7 @@ body {
   max-width: 70%;
   margin: auto;
   text-align: center;
+  background-color: pink;
 }
 
 .error-head {
@@ -215,6 +216,7 @@ body {
   letter-spacing: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
+  background-color: green;
   @include light-mode {
     color: $color-body-font-light;
   }
@@ -329,7 +331,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 4vw 0 0 0;
+    margin: 3vw 0 0 0;
   }
   .site-head-left {
     order: 2;
