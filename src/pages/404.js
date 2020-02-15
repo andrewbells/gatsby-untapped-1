@@ -56,7 +56,7 @@ export const pageQuery = graphql`
     }
 
     medPic: file(
-      relativePath: { eq: "mtg_wallpaper_success_1.jpg" }
+      relativePath: { eq: "wallpaper_404.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
