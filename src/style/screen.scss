@@ -296,7 +296,7 @@ body {
   .site-head-container {
     flex-direction: column;
     justify-content: flex-start;
-    height: 50px;
+    height: 40px;
     background: rgba(255, 255, 255, 0);
     z-index: -1;
     transition: all 0.4s ease-out;
@@ -339,7 +339,8 @@ body {
   .site-head-center {
     order: 1;
     position: static;
-    z-index: auto;
+    z-index: 3010;
+    /* z-index: auto; */
     display: flex;
     justify-content: left;
     width: 186px;
