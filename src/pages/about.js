@@ -59,6 +59,7 @@ const AboutPage = ({ data }, location) => {
                   name="firstname"
                   id="firstname"
                   placeholder="First Name"
+                  required
                 />
               </div>
               <div className="col-6 col-12-xsmall">
@@ -67,6 +68,7 @@ const AboutPage = ({ data }, location) => {
                   name="lastname"
                   id="lastname"
                   placeholder="Last Name"
+                  required
                 />
               </div>
               <div className="col-6 col-12-xsmall">
@@ -75,7 +77,7 @@ const AboutPage = ({ data }, location) => {
                   name="email"
                   id="email"
                   placeholder="Email"
-
+                  required
                 />
               </div>
               {/* Break */}
@@ -85,6 +87,7 @@ const AboutPage = ({ data }, location) => {
                   name="link"
                   id="link"
                   placeholder="LinkedIn / GitHub / Twitter [link]"
+                  required
                 />
               </div>
               <div className="col-12">
