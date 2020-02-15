@@ -213,7 +213,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
   @include light-mode {
     color: $color-body-font-light;
@@ -296,9 +296,9 @@ body {
   .site-head-container {
     flex-direction: column;
     justify-content: flex-start;
-    height: 40px !important;
+    height: 40px;
     background: rgba(255, 255, 255, 0);
-    z-index: 9998;
+    z-index: -1;
     transition: all 0.4s ease-out;
     overflow: hidden;
   }
