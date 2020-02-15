@@ -329,7 +329,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    margin: 3vw 0 0 0;
+    margin: 4vw 0 0 0;
   }
   .site-head-left {
     order: 2;
@@ -339,8 +339,7 @@ body {
   .site-head-center {
     order: 1;
     position: static;
-    z-index: 3010;
-    /* z-index: auto; */
+    z-index: auto;
     display: flex;
     justify-content: left;
     width: 186px;
