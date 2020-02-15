@@ -28,8 +28,8 @@ class NotFoundPage extends React.Component {
           <figure className="post-card post-card-large with-image kg-image-card kg-width-full">
             <Link to={`/`} className="post-card-link">
               <Img
-                fluid={data.largePic.childImageSharp.fluid}
-                className="kg-image"
+                fluid={data.medPic.childImageSharp.fluid}
+                className="kg-image untapped-join-image"
               />
               <div className="post-card-content">
                 <h2 className="post-card-title">Back</h2>
@@ -55,7 +55,7 @@ export const pageQuery = graphql`
       }
     }
 
-    largePic: file(
+    medPic: file(
       relativePath: { eq: "mtg_wallpaper_success_1.jpg" }
     ) {
       childImageSharp {
