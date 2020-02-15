@@ -217,6 +217,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   background-color: green;
+  z-index: 10000;
   @include light-mode {
     color: $color-body-font-light;
   }
