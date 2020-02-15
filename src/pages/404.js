@@ -25,7 +25,7 @@ class NotFoundPage extends React.Component {
               You just hit a route that doesn&#39;t exist... fall back!
             </p>
 
-          <figure className="post-card post-card-large with-image kg-image-card kg-width-full">
+          <figure className="post-card post-card-large with-image kg-image-card">
             <Link to={`/`} className="post-card-link">
               <Img
                 fluid={data.medPic.childImageSharp.fluid}
