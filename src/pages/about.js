@@ -118,7 +118,7 @@ const AboutPage = ({ data }, location) => {
                 />
                 <label htmlFor="tos">
                   <div>
-                    Accept&nbsp;<a href="/terms-of-service">Terms of Service</a>&nbsp;and&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+                    Accept &nbsp;<a href="/terms-of-service">Terms of Service</a> &nbsp;and &nbsp;<a href="/privacy-policy">Privacy Policy</a>
                   </div>
                 </label>
               </div>
@@ -126,7 +126,7 @@ const AboutPage = ({ data }, location) => {
               {/* Break */}
               <div className="col-12">
                 <ul className="actions actions-even-padding fit">
-                  <li>
+                  <li className="actions-remove-padding">
                     <input
                       type="submit"
                       value="Sign up"
