@@ -88,12 +88,7 @@ module.exports = {
         anonymizeIP: false,
         // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
         autoStartWithCookiesEnabled: false, 
-        // Optional parameter - Configuration for react-ga and google analytics 
-        reactGaOptions: {
-            debug: true,
-            gaOptions: {
-                sampleRate: 10
-            }
+
         }
       },
     },
