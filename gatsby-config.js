@@ -76,25 +76,42 @@ module.exports = {
         purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       },
     },
+
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-google-analytics-gdpr`,
       options: {
-        trackingId: `UA-158882093-1`,
+        // The property ID; the tracking code won't be generated without it.
+        trackingId: "UA-158882093-1", 
+        // Optional parameter (default false) - Enable analytics in development mode.
+        enableDevelopment: true, // default false
+        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
+        anonymizeIP: true,
+        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
+        autoStartWithCookiesEnabled: false, 
+        // Optional parameter - Configuration for react-ga and google analytics 
+        reactGaOptions: {
+            debug: true,
+            gaOptions: {
+                sampleRate: 10
+            }
+        }
       },
     },
 
     {
-      resolve: `gatsby-plugin-gdpr-cookies`,
-      options: {
-        googleAnalytics: {
-          trackingId: 'UA-158882093-1',
-          // Setting this parameter is optional
-          cookieName: 'gatsby-gdpr-google-analytics', // default is gatsby-gdpr-google-analytics
-          anonymize: true // default is true
-        },
-        // Defines the environments where the tracking should be available  - default is ["production"]
-        environments: ['production', 'development']
-      },
+        resolve: `gatsby-plugin-cookiehub-banner`,
+        options: {
+            // Your cookiehub widget ID. You can find the widget ID in the CookieHub tab "Your script" of the appropriate widget. The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
+            cookieHubId: "dcc39471",
+            // Categories configured with CookieHub
+            categories: [
+            { 
+                categoryName: 'analytics', // Unique id of the category which you can set in CookieHub categories.
+                cookieName: 'gatsby-plugin-google-analytics-gdpr_cookies-enabled' // Custom cookie name
+            },
+
+            ]
+        }
     },
 
     `gatsby-plugin-feed`,
