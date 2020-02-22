@@ -99,7 +99,7 @@ const AboutPage = ({ data }, location) => {
                   defaultValue={""}
                 />
               </div>
-              <div className="col-6 col-12-small">
+              <div className="col-12-xsmall">
                 <input
                   type="checkbox"
                   id="host"
@@ -107,6 +107,18 @@ const AboutPage = ({ data }, location) => {
                   
                 />
                 <label htmlFor="host">I'd like to organize an event</label>
+              </div>
+
+              <div className="col-12-xsmall">
+                <input
+                  type="checkbox"
+                  id="tos"
+                  name="tos"
+                  required
+                />
+                <label htmlFor="tos">
+                  Accept&nbsp;<a href="/terms-of-service">Terms of Service</a>&nbsp;and&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+                </label>
               </div>
 
               {/* Break */}
