@@ -117,7 +117,9 @@ const AboutPage = ({ data }, location) => {
                   required
                 />
                 <label htmlFor="tos">
-                  Accept&nbsp;<a href="/terms-of-service">Terms of Service</a>&nbsp;and&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+                  <div>
+                    Accept&nbsp;<a href="/terms-of-service">Terms of Service</a>&nbsp;and&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+                  </div>
                 </label>
               </div>
 
