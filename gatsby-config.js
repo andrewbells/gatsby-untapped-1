@@ -78,21 +78,6 @@ module.exports = {
     },
 
     {
-      resolve: `gatsby-plugin-google-analytics-gdpr`,
-      options: {
-        // The property ID; the tracking code won't be generated without it.
-        trackingId: "UA-158882093-1", 
-        // Optional parameter (default false) - Enable analytics in development mode.
-        enableDevelopment: false, // default false
-        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
-        anonymizeIP: false,
-        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
-        autoStartWithCookiesEnabled: false, 
-        // Optional parameter - Configuration for react-ga and google analytics 
-      },
-    },
-
-    {
         resolve: `gatsby-plugin-cookiehub-banner`,
         options: {
             // Your cookiehub widget ID. You can find the widget ID in the CookieHub tab "Your script" of the appropriate widget. The ID is part of the CookieHub URL: https://cookiehub.net/cc/YOUR_COOKIEHUB_ID.js
@@ -106,6 +91,21 @@ module.exports = {
 
             ]
         }
+    },
+
+    {
+      resolve: `gatsby-plugin-google-analytics-gdpr`,
+      options: {
+        // The property ID; the tracking code won't be generated without it.
+        trackingId: "UA-158882093-1", 
+        // Optional parameter (default false) - Enable analytics in development mode.
+        enableDevelopment: false, // default false
+        // Optional parameter (default true) - Some countries (such as Germany) require you to use the _anonymizeIP function for Google Analytics. Otherwise you are not allowed to use it.
+        anonymizeIP: false,
+        // Optional parameter (default false) - Starts google analytics with cookies enabled. In some countries (such as Germany) this is not allowed.
+        autoStartWithCookiesEnabled: false, 
+        // Optional parameter - Configuration for react-ga and google analytics 
+      },
     },
 
     `gatsby-plugin-feed`,
