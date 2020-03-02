@@ -5,5 +5,6 @@ module.exports = {
   url: 'https://www.untappd.club', // Domain of your site without prefix!
   prefix: '/',
   author: 'Andrew Kolokolnikov',
+  image: "/untapped_seo.jpg",
   twitter: ''
 }

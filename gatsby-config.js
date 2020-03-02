@@ -7,6 +7,7 @@ module.exports = {
     author: siteConfig.author,
     description: siteConfig.description,
     siteUrl: urljoin(siteConfig.url, siteConfig.prefix),
+    image: siteConfig.image,
     social: {
       twitter: siteConfig.twitter,
     },
