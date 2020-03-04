@@ -24,7 +24,7 @@ const AboutPage = ({ data }, location) => {
           </h2>
 
           <p className="top-margin">
-            Effective as of March 1st 2020, last edited March 1st 2020
+            Effective as of March 1st 2020, last edited March 1st 2020.
           </p>
           <p>      
             This Privacy Policy describes what personal data we collect about you and how we use it, as well as the choices you have about your personal data.
