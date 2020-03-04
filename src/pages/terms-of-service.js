@@ -149,7 +149,6 @@ const AboutPage = ({ data }, location) => {
           <p>
             A. You may send Untapped a written copyright infringement notification pursuant to Section 191 of the Finnish Information Society Code. Please make sure that you include the following information in your notification:
           </p>
-          <p>
           <ol>
             <li>
               your full name and contact information (address and telephone number, a valid email address, as well as your Untapped username, if applicable);
@@ -170,7 +169,6 @@ const AboutPage = ({ data }, location) => {
               your signature (physical or electronic).
             </li>
           </ol>
-          </p>
           <p>  
             B. Your notice concerning the claimed infringement should be sent to Untapped by email to andrew@roborob.io.
           </p>

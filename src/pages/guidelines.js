@@ -23,9 +23,7 @@ const AboutPage = ({ data }, location) => {
             Community Guidelines
           </h2>
 
-          <p className="top-margin">
-          </p>
-          <h6>
+          <h6 className="top-margin-h6">
             Untapped Grounds is a community of Magic: the Gathering fans working in the IT industry.
           </h6>
           <p>
@@ -85,7 +83,6 @@ const AboutPage = ({ data }, location) => {
           <p>
             We do not tolerate content that is:
           </p>
-          <p>
             <ul>
               <li>  
                 Illegal
@@ -112,7 +109,6 @@ const AboutPage = ({ data }, location) => {
                 Personal confidential information
               </li>
             </ul>
-          </p>
           <p>
             Please don't waste your time looking for loopholes; we will remove any content that violates the spirit of these guidelines and you will risk losing partial or full access to Untapped without warning. By following these guidelines, we will all contribute to an interesting and helpful community.
           </p>
