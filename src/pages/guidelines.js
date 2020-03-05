@@ -23,7 +23,11 @@ const AboutPage = ({ data }, location) => {
             Community Guidelines
           </h2>
 
-          <h6 className="top-margin-h6">
+          <p className="top-margin">
+            Effective as of March 1st 2020, last edited March 1st 2020.
+          </p>
+
+          <h6>
             Untapped Grounds is a community of Magic: the Gathering fans working in the IT industry.
           </h6>
           <p>
@@ -53,6 +57,7 @@ const AboutPage = ({ data }, location) => {
           <p>
             We are all here to have a good game and have fun, let's play fair!
           </p>
+          <hr />
           <h4>
             PLEASE DO NOT USE UNTAPPED TO:
           </h4>
