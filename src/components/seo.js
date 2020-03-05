@@ -50,7 +50,7 @@ function SEO({ description, lang, meta, keywords, title, image }) {
         },
         {
           property: `og:image`,
-          content: metaDescription,
+          content: site.siteMetadata.image,
         },
         {
           property: `og:type`,

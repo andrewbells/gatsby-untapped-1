@@ -21,6 +21,7 @@ const BlogIndex = ({ data }, location) => {
       <SEO
         title="Welcome to the Untapped Grounds"
         keywords={[`mtg`, `magic the gathering`, `community`, `tech`, `helsinki`]}
+        image={data.site.siteMetadata.image}
       />
       {/* <Bio /> */}
       {data.site.siteMetadata.description && (
