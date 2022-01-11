@@ -24,13 +24,13 @@ const AboutPage = ({ data }, location) => {
           </h2>
 
           <p className="top-margin">
-            There are many MTG fans working at different tech companies in Helsinki, interested to play draft, sealed and constructed games, but there is never quite enough players for a proper self-organized event.
+            There are many MTG fans working at different tech companies in Helsinki, interested to play draft, sealed, and constructed games, but there are never quite enough players for a proper self-organized event.
           </p>
           <p>
-            <strong>The purpose</strong> of this community is to bring Helsinki-based MTG players together, enable them to play in comfort, at a reasonable time and a convenient place.
+            <strong>The purpose</strong> of this community is to bring Helsinki-based MTG players together, enable them to play in comfort, at a reasonable time, and in a convenient place.
           </p>
           <p>
-            The next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks and, of course, the cards would be sponsored by the host. Clearly a win-win situation!  
+            The next step is to make this a monthly happening that would be hosted by a different tech company, and the venue, food, drinks, and, of course, the cards would be sponsored by the host. Clearly a win-win situation!  
           </p>
           <p>
             Let’s make this happen - join the <strong>Untapped Slack</strong>:
