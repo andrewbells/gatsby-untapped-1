@@ -61,7 +61,7 @@ const indexQuery = graphql`
     }
 
     benchAccounting: file(
-      relativePath: { eq: "mtg_wallpaper.jpg" }
+      relativePath: { eq: "mtg_wallpaper_1.jpg" }
     ) {
       childImageSharp {
         fluid(maxWidth: 1360) {
